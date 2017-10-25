@@ -22,7 +22,7 @@ import java.io.File;
 public class DownLoadService extends Service {
     private DownLoadAsynctask mDownLoadAsynctask;
     private String downLoadUrl;
-    //创建一个listener对象
+    //创建一个listener对象，主要是把下载过程中的状态都回调回来作为通知显示出来
     DownloadFileListener downloadFileListener = new DownloadFileListener() {
 
         @Override
